@@ -4,7 +4,7 @@ public class DetallePersona {
     public static void main(String[] args){
         String nombreCompleto = "Moctezuma Quetz";
         int edad = 33;
-        double altura = 1.75;
+        double altura = 1.75F;
         String paisOrigen = "Mexico";
         char estadoCivil = 'c';
 
