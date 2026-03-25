@@ -6,11 +6,12 @@ public class Variables {
         double precio = 3434.44;
         boolean disponible = true;
         char genero;
-        genero = 'M';
+        genero = 'F';
 
         System.out.println("edad = " + edad);
         System.out.println("precio = " + precio);
         System.out.println("disponible = " + disponible);
         System.out.println("genero = " + genero);
+
     }
 }
