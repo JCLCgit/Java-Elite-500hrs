@@ -9,7 +9,8 @@ public class Cadenas {
         var cadena4 = """
                 Hola a todos
                 amantes de las películas de
-                Jurassic Park
+                Jurassic Park 
+                y el mundo creado de Jurassic Park
                 """;
         System.out.println("cadena1 = " + cadena1);
         System.out.println("cadena2 = " + cadena2);
