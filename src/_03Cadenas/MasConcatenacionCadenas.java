@@ -14,7 +14,7 @@ public class MasConcatenacionCadenas {
         cadenaConstruida.append(cadena1);
         cadenaConstruida.append(" ");
         cadenaConstruida.append(cadena2);
-        cadenaConstruida.toString();
-        System.out.println("cadenaConstruida = " + cadenaConstruida);
+        var resultado = cadenaConstruida.toString();
+        System.out.println("cadenaConstruida = " + resultado);
     }
 }
