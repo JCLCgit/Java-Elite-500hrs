@@ -16,5 +16,13 @@ public class MasConcatenacionCadenas {
         cadenaConstruida.append(cadena2);
         var resultado = cadenaConstruida.toString();
         System.out.println("cadenaConstruida = " + resultado);
+
+        var cadenaBuffer = new StringBuffer();
+        cadenaBuffer.append(cadena1).append("*").append(cadena2).toString();
+        System.out.println("cadenaBuffer = " + cadenaBuffer);
+
+        var cadenaJoin = new String();
+        cadenaJoin = String.join("-",cadena1,cadena2,cadena3);
+        System.out.println("cadenaJoin = " + cadenaJoin);
     }
 }
