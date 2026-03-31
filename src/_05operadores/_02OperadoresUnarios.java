@@ -10,8 +10,8 @@ public class _02OperadoresUnarios {
         System.out.println("+a = " + resultado);
         resultado = ++a;
         System.out.println("++a = " + resultado);
-        resultado = a++;
-        System.out.println("resutlado = a++ = " + resultado);
+
+        System.out.println("a++ = " + a++);
         System.out.println("a++ aplicado = " + a);
 
 
