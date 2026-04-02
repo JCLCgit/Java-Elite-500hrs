@@ -1,6 +1,6 @@
 package _06sentenciasDecision;
 
-public class SentenciaIf {
+public class _01SentenciaIf {
     public static void main(String[] args) {
         var edad = 15;
 
