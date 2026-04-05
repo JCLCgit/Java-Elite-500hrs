@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class _14SistemaCalificaciones {
     public static void main(String[] args) {
-        double min = -1.0, max = 10.0;
+        double min = -1.0, max = 11.0;
 
         System.out.println("**Sistema de Calificaciones**");
         Random aletorio = new Random();
@@ -12,7 +12,7 @@ public class _14SistemaCalificaciones {
         var calificacion = aletorio.nextFloat()*(max)+min;
         System.out.printf("calificacion = %.2f\n", calificacion);
 
-        if (calificacion <= 10 && calificacion > 9 )
+        if (calificacion <= 10 && calificacion >= 9 )
             System.out.println("CALIFICACIÓN -> A");
         else if (calificacion < 9 && calificacion >= 8)
             System.out.println("CALIFICACIÓN -> B");
