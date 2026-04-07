@@ -22,11 +22,14 @@ public class _10CajeroAutomatico {
             System.out.print("Escoge una opción: ");
             opcion = Integer.parseInt(scanner.nextLine());
             switch (opcion){
-                case 1 -> System.out.printf("\nSu saldo es: %.3f",saldoCuenta);
+                case 1 -> System.out.printf("\nSu saldo es: %.3f%n",saldoCuenta);
                 case 2 -> {
                     System.out.print("Ingresa el monto a retirar: ");
                     monto = Float.parseFloat(scanner.nextLine());
-                    saldoCuenta -= monto;
+                    if (monto <= saldoCuenta)
+                        saldoCuenta -= monto;
+                    else
+                        System.out.println("Saldo insuficiente ");
                 }
                 case 3 -> {
                     System.out.print("Ingresa el monto a depositar: ");
