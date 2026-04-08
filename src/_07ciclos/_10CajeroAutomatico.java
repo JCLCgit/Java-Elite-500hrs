@@ -34,7 +34,10 @@ public class _10CajeroAutomatico {
                 case 3 -> {
                     System.out.print("Ingresa el monto a depositar: ");
                     monto = Float.parseFloat(scanner.nextLine());
+                    if (monto > 0)
                     saldoCuenta += monto;
+                    else
+                        System.out.println("ingresa una cantidad válida");
                 }
                 case 4 -> {
                     System.out.println("Saliendo del sistema...");
