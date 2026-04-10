@@ -15,12 +15,12 @@ public class _15BreakContinue {
                 break;
             }
         }
-        System.out.println("Números impares");
-        for (int numeroDos = 1; numeroDos < limite; numeroDos++) {
+        System.out.println("Números pares con continue");
+        for (int numeroDos = 1; numeroDos <= limite; numeroDos++) {
             if(numeroDos % 2 == 1 ){
-                System.out.print(" "+ numeroDos);
-
+                continue;
             }
+            System.out.print(" "+ numeroDos);
 
         }
 
