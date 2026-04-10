@@ -8,6 +8,9 @@ public class _01Arreglos {
         arreglos[2] = 7;
         arreglos[3] = 9;
 
-        System.out.println(arreglos[0]);
+        System.out.println("Valor 1 ->" + arreglos[0]);
+        System.out.println("Valor 2 ->" + arreglos[1]);
+        System.out.println("Valor 3 ->" + arreglos[2]);
+        System.out.println("Valor 4 ->" + arreglos[3]);
     }
 }
