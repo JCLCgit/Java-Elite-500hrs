@@ -12,11 +12,16 @@ public class _03FuncionPar {
             mensaje = "Es IMPAR";
         return mensaje;
     }
-    static String esParCompacto (int numero){
+    /*static String esParCompacto (int numero){
         String mensaje;
         mensaje = (numero % 2 == 0) ? "Es PAR": "Es IMPAR";
         return mensaje;
+    }*/
+    static String esParCompacto (int numero){
+
+        return (numero % 2 == 0) ? "Es PAR": "Es IMPAR";
     }
+
     public static void main(String[] args) {
         System.out.println("**Es Par a través de funciones**");
         Random aleatorio = new Random();
