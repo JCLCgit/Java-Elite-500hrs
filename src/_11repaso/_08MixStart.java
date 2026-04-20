@@ -2,8 +2,7 @@ package _11repaso;
 
 public class _08MixStart {
     static boolean mixStart(String cadena){
-
-        return (cadena.strip().substring(1,2).equals("ix"));
+        return (cadena.strip().substring(1,3).equals("ix"));
     }
     public static void main(String[] args) {
 
@@ -13,7 +12,6 @@ public class _08MixStart {
         System.out.println("cadena = " + mixStart("mix snacks"));
         System.out.println("cadena = " + mixStart("pix snacks"));
         System.out.println("cadena = " + mixStart("piz snacks"));
-
 
     }
 }
