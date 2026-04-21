@@ -9,8 +9,9 @@ public class _09Close10 {
 
     public static void main(String[] args) {
 
-        close10(8, 13);
-        close10(13, 8);
-        close10(13, 7);
+        System.out.println("close10() = " + close10(8, 13));
+        System.out.println("close10() = " + close10(13, 8));
+        System.out.println("close10() = " + close10(13, 7));
+
     }
 }
