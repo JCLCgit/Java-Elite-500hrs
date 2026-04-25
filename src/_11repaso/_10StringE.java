@@ -12,14 +12,17 @@ stringE("Heelele") → false
      */
     static boolean stringE(String str) {
         int contador = 0;
+        boolean respuesta;
         for (int i = 0; i < str.length() ; i++) {
-
+            if (str.charAt(i) == 'e')
+                contador++;
         }
-        return true;
+        return (contador >= 3) ? true : false;
     }
     public static void main(String[] args) {
         String cadena = "hello";
 
         stringE(cadena);
+        System.out.println("cadena = " + cadena);
     }
 }
