@@ -17,7 +17,7 @@ stringE("Heelele") → false
             if (str.charAt(i) == 'e')
                 contador++;
         }
-        return (contador > 1 && contador <= 3) ? true : false;
+        return (contador >= 1 && contador <= 3) ? true : false;
     }
     public static void main(String[] args) {
         String cadena = "hello";
