@@ -10,16 +10,19 @@ everyNth("abcdefg", 2) → "aceg"
 everyNth("abcdefg", 3) → "adg
      */
     static String everyNth(String str, int n) {
+        String resultado = "";
+        for (int i = 0; i < str.length() ; i = i + n) {
+            resultado = resultado + str.charAt(i);
+        }
 
-
-
-        return "Hello";
+        return resultado;
     }
     public static void main(String[] args) {
 
         System.out.println("Resultado = " + everyNth("Miracle", 2));
         System.out.println("Resultado = " + everyNth("abcdefg", 2));
         System.out.println("Resultado = " + everyNth("abcdefg", 3));
+        System.out.println("Resultado = " + everyNth("Miracle", 1));
 
 
     }
