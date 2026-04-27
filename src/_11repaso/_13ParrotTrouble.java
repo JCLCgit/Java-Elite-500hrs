@@ -13,7 +13,7 @@ parrotTrouble(false, 6) → false
      */
     static boolean parrotTrouble(boolean talking, int hour) {
 
-        return (hour > 20 && hour < 7 && true ? true : false);
+        return ((hour > 20 || hour < 7) && talking ? true : false);
     }
     public static void main(String[] args) {
 
