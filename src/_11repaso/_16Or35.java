@@ -10,7 +10,21 @@ or35(3) → true
 or35(10) → true
 or35(8) → false
      */
+    static boolean or35(int n) {
+
+        if (n < 0)
+            return false;
+        else if ((n >= 0) && ((n % 3 == 0) || (n % 5 == 0))) {
+            return true;
+        }
+        else
+            return false;
+
+    }
     public static void main(String[] args) {
 
+        System.out.println("or35(3) = " + or35(3));
+        System.out.println("or35(10) = " + or35(10));
+        System.out.println("or35(8) = " + or35(8));
     }
 }
