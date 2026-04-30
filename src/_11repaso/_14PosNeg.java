@@ -16,9 +16,10 @@ posNeg(-4, -5, true) → true
             return false;
         else if (((a > 0 && b < 0) || (a < 0 && b > 0)) && !negative) {
             return true;
-        } else if (a < 0 && b < 0)
+        } else if(((a < 0) && (b < 0)) && negative )
             return true;
-
+        else
+            return false;
     }
     public static void main(String[] args) {
 
