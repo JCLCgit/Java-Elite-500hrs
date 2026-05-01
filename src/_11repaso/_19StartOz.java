@@ -13,14 +13,14 @@ startOz("oxx") → "o"
     static String startOz(String str) {
 
         String result = "";
-        char start;
-        char end;
 
-        if (str.length() < 2)
-            return "";
-        else if (str.charAt(0) == 'o' && str.charAt(1) == 'z') {
-            result = str.substring(0,2);
 
+        if (str.length() >= 1 && str.charAt(0)=='o') {
+            result = result + str.charAt(0);
+        }
+
+        if (str.length() >= 2 && str.charAt(1)=='z') {
+            result = result + str.charAt(1);
         }
 
         return result;
