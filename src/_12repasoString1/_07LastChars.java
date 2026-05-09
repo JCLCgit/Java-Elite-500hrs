@@ -20,7 +20,9 @@ lastChars("hi", "") → "h@"
             end = "@";
             return a.substring(0, 1) + end;
         }
-        if()
+        if(a.equals("") && b.equals(""))
+            return "@@";
+
         return a.substring(0, 1) + b.substring(b.length() - 1);
     }
     public static void main(String[] args) {
