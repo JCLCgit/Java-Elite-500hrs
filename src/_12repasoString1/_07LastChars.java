@@ -11,16 +11,17 @@ lastChars("yo", "java") → "ya"
 lastChars("hi", "") → "h@"
      */
     static String lastChars(String a, String b) {
-        String start, last = b;
-        if(a.length() == 0)
+        String start = "", end = "";
+        if(a.length() == 0 && b.length() > 0){
             start = "@";
-        else
-            start = a;
-        if (b.length() == 0)
-            last = "@";
-        else
-            last = b;
-        return
+            return start + b.substring(b.length() - 1);
+        }
+        if (b.length() == 0 && a.length() > 0){
+            end = "@";
+            return a.substring(0, 1) + end;
+        }
+        if()
+        return a.substring(0, 1) + b.substring(b.length() - 1);
     }
     public static void main(String[] args) {
         System.out.println("lastChars(\"last\", \"chars\") = " + lastChars("last", "chars"));
