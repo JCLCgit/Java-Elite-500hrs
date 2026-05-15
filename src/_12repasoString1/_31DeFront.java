@@ -11,10 +11,21 @@ deFront("java") → "va"
 deFront("away") → "aay"
      */
     static String deFront(String str) {
-
+        if(str.isEmpty())
+            return "";
+        else if (!(str.charAt(0) == 'a') && !(str.charAt(1) == 'b') ){
+            return str.substring(2);
+        } else if ((str.charAt(0) == 'a') && !(str.charAt(1) == 'b') ) {
+            return str.charAt(0) + str.substring(2);
+        }else if (!(str.charAt(0) == 'a') && (str.charAt(1) == 'b') ){
+            return str.substring(1);
+        }else
+            return str;
     }
 
     public static void main(String[] args) {
-
+        System.out.println("deFront(\"Hello\") = " + deFront("Hello"));
+        System.out.println("deFront(\"java\") = " + deFront("java"));
+        System.out.println("deFront(\"away\") = " + deFront("away"));
     }
 }
