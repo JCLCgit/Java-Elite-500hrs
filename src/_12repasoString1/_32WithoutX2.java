@@ -11,17 +11,14 @@ withoutX2("Hxi") → "Hi"
 withoutX2("Hi") → "Hi"
      */
     static String withoutX2(String str) {
-        if(str.charAt(0) == 'x' && str.charAt(1) == 'x' && str.length() > 2)
-            return str.substring(2);
-        if(str.charAt(0) == 'x' && str.charAt(1) == 'x')
-            return "";
-        if(str.charAt(0) == 'x' && !(str.charAt(1) == 'x'))
-            return str.substring(1);
-        if(!(str.charAt(0) == 'x') && (str.charAt(1) == 'x'))
-            return str.charAt(0) + str.substring(2);
-        else
-            return str;
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if(i < 2 && str.charAt(i) == 'x')
+                continue;
 
+            result.append(str.charAt(i));
+        }
+        return result.toString();
     }
     public static void main(String[] args) {
         System.out.println("withoutX2(\"xHi\") = " + withoutX2("xHi"));
