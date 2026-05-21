@@ -13,8 +13,6 @@ makeMiddle([1, 2]) → [1, 2]
      */
     static int[] makeMiddle(int[] nums) {
         int location = nums.length / 2;
-
-
         return new int[] {nums[location - 1], nums[location]};
 
     }
@@ -24,7 +22,7 @@ makeMiddle([1, 2]) → [1, 2]
         int[] array3 = new int[]{1, 2};
 
         System.out.println("Array 1: {1, 2, 3, 4} ->" + Arrays.toString(makeMiddle(array1)));
-        System.out.println("Array 1: {7, 1, 2, 3, 4, 9} ->" + Arrays.toString(makeMiddle(array2)));
-        System.out.println("Array 1: {1, 2} ->" + Arrays.toString(makeMiddle(array3)));
+        System.out.println("Array 2: {7, 1, 2, 3, 4, 9} ->" + Arrays.toString(makeMiddle(array2)));
+        System.out.println("Array 3: {1, 2} ->" + Arrays.toString(makeMiddle(array3)));
     }
 }
