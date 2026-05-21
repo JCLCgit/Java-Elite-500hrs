@@ -13,7 +13,7 @@ midThree([1, 2, 3]) → [1, 2, 3]
      */
     static int[] midThree(int[] nums) {
         int position = nums.length / 2;
-        return new int[]{nums[position - 1], nums[position], nums[position]};
+        return new int[]{nums[position - 1], nums[position], nums[position + 1]};
     }
     public static void main(String[] args) {
         int[] array1 = new int[]{1, 2, 3, 4, 5};
