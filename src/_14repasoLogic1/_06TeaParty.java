@@ -14,7 +14,18 @@ teaParty(6, 8) → 1
 teaParty(3, 8) → 0
 teaParty(20, 6) → 2
      */
-    public static void main(String[] args) {
+    static int teaParty(int tea, int candy) {
 
+        if((tea >= 5 && candy >= 5)){
+            if((tea >= 2 * candy) || (tea >= 2 * candy))
+                return 2;
+            return 1;
+        }
+        return 0;
+    }
+    public static void main(String[] args) {
+        System.out.println("teaParty(6, 8) = " + teaParty(6, 8));
+        System.out.println("teaParty(6, 8) = " + teaParty(3, 8));
+        System.out.println("teaParty(6, 8) = " + teaParty(20, 6));
     }
 }
