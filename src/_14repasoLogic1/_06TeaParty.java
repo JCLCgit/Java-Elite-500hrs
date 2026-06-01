@@ -17,7 +17,7 @@ teaParty(20, 6) → 2
     static int teaParty(int tea, int candy) {
 
         if((tea >= 5 && candy >= 5)){
-            if((tea >= 2 * candy) || (tea >= 2 * candy))
+            if((tea >= 2 * candy) || (candy >= 2 * tea))
                 return 2;
             return 1;
         }
