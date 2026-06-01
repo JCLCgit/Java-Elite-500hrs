@@ -9,6 +9,7 @@ lastDigit(23, 19, 13) → true
 lastDigit(23, 19, 12) → false
 lastDigit(23, 19, 3) → true
      */
+    /*
     static boolean lastDigit(int a, int b, int c) {
         int counter = 0;
         if(a % 10 == b % 10)
@@ -19,6 +20,15 @@ lastDigit(23, 19, 3) → true
             counter++;
         return counter >= 1;
     }
+     */
+    static boolean lastDigit(int a, int b, int c) {
+        int digitoA = a % 10;
+        int digitoB = b % 10;
+        int digitoC = c % 10;
+
+        return (digitoA == digitoB) || (digitoA == digitoC) || (digitoB == digitoC);
+    }
+
     public static void main(String[] args) {
         System.out.println("lastDigit(23, 19, 13) = " + lastDigit(23, 19, 13));
         System.out.println("lastDigit(23, 19, 13) = " + lastDigit(23, 19, 12));
