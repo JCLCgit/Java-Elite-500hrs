@@ -9,10 +9,19 @@ old35(3) → true
 old35(10) → true
 old35(15) → false
      */
+   /*
     static boolean old35(int n) {
         boolean a = n % 3 == 0 ;
         boolean b = n % 5 == 0;
         return a && b ? false : a || b ? true : false;
+    }
+
+    */
+    //REFINADO
+    static boolean old35(int n) {
+        boolean a = n % 3 == 0 ;
+        boolean b = n % 5 == 0;
+        return a ^ b;
     }
     public static void main(String[] args) {
         System.out.println("old35(3) = " + old35(3));
