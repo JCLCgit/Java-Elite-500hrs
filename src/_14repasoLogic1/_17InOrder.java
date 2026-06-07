@@ -11,9 +11,9 @@ inOrder(1, 2, 1, false) → false
 inOrder(1, 1, 2, true) → true
      */
     static boolean inOrder(int a, int b, int c, boolean bOk) {
-        if(!bOk && b > a && c > b)
+        if(bOk && c > b)
             return true;
-        if(c > b)
+        if(b > a && c > b)
             return true;
         return false;
     }
