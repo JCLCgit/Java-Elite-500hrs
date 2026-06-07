@@ -21,6 +21,8 @@ old35(15) → false
     static boolean old35(int n) {
         boolean a = n % 3 == 0 ;
         boolean b = n % 5 == 0;
+
+        // El operador ^ es el XOR (OR exclusivo): da true si solo uno de los dos es true
         return a ^ b;
     }
     public static void main(String[] args) {
