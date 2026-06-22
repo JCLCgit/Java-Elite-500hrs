@@ -1,0 +1,25 @@
+package _16repasoWarmUp2;
+
+public class _01StringTimes {
+    /*
+Given a string and a non-negative int n,
+return a larger string that is n copies of the original string.
+
+stringTimes("Hi", 2) → "HiHi"
+stringTimes("Hi", 3) → "HiHiHi"
+stringTimes("Hi", 1) → "Hi"
+     */
+    static String stringTimes(String str, int n) {
+        String result = "";
+        for (int i = 0; i < n; i++) {
+            result += str;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println("stringTimes(\"Hi\", 2) = " + stringTimes("Hi", 2));
+        System.out.println("stringTimes(\"Hi\", 3) = " + stringTimes("Hi", 3));
+        System.out.println("stringTimes(\"Hi\", 1) = " + stringTimes("Hi", 1));
+        
+    }
+}
